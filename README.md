@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Static Site Template (Next.js)
 
-## Getting Started
+This project is a config-driven static site starter built with Next.js App Router, TypeScript, and Tailwind CSS.
 
-First, run the development server:
+The homepage is assembled block by block from one source of truth:
+- `src/config/site.ts`
+
+## Run Locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Build and Lint
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run lint
+npm run build
+```
 
-## Learn More
+## How the Architecture Works
 
-To learn more about Next.js, take a look at the following resources:
+- `src/types/site.ts`
+Defines typed contracts for every block.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `src/config/site.ts`
+Contains all editable content and page composition order.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `src/components/site/BlockRenderer.tsx`
+Maps block types to React components.
 
-## Deploy on Vercel
+- `src/components/site/blocks/*`
+Reusable, configurable block components.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `src/app/page.tsx`
+Reads config and renders blocks in sequence.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Add or Reorder Sections
+
+1. Open `src/config/site.ts`.
+2. In `pages.home.blocks`, reorder existing block objects or add a new one.
+3. If adding a new block type:
+	- Create a type in `src/types/site.ts`.
+	- Create a component in `src/components/site/blocks/`.
+	- Register the block in `src/components/site/BlockRenderer.tsx`.
+
+## Notes
+
+- This starter currently includes: hero, feature grid, split content, stats, testimonials, FAQ, and CTA banner blocks.
+- The home route is statically prerendered.
