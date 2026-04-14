@@ -14,11 +14,11 @@ export function TestimonialsBlock({ block }: TestimonialsBlockProps) {
         {block.items.map((item) => (
           <figure
             key={`${item.name}-${item.role}`}
-            className="rounded-2xl border border-black/10 bg-white p-7 shadow-[0_10px_35px_rgba(0,0,0,0.06)]"
+            className="rounded-2xl border border-[var(--brand)]/18 bg-[var(--surface)] p-7 shadow-[0_10px_35px_rgba(43,67,102,0.17)]"
           >
-            <blockquote className="text-lg leading-8 text-black/80">{item.quote}</blockquote>
-            <figcaption className="mt-5 text-sm text-black/65">
-              <span className="block font-semibold text-black/85">{item.name}</span>
+            <blockquote className="text-lg leading-8 text-[var(--text-muted)]">{item.quote}</blockquote>
+            <figcaption className="mt-5 text-sm text-[var(--text-muted)]">
+              <span className="block font-semibold text-[var(--ink)]">{item.name}</span>
               <span>{item.role}</span>
             </figcaption>
           </figure>

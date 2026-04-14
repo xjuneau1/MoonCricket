@@ -31,7 +31,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${manrope.variable} ${fraunces.variable} h-full antialiased`}>
+    <html lang="en" data-theme="coastal-warm" className={`${manrope.variable} ${fraunces.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
         <MainNav />
         <div className="flex-1">{children}</div>

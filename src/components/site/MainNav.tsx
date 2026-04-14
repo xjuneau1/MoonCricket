@@ -9,17 +9,19 @@ const navItems = [
   { label: "Menu", href: "/menu" },
   { label: "Beer", href: "/beer" },
   { label: "FAQs", href: "/faqs" },
+  { label: "Events", href: "/events" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export function MainNav() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 border-b border-black/10 bg-[var(--paper)]/92 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 border-b border-[var(--brand)]/18 bg-[var(--surface-strong)]/95 backdrop-blur-xl">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-6 py-4 md:px-10">
         <Link href="/" className="group inline-flex items-center">
           <Image
-            src="/assets/mooncricket/logo.png"
+            src="/assets/mooncricket/MClogo_upscale_nobg.png"
             alt="The MoonCricket Grille"
             width={220}
             height={70}
@@ -28,7 +30,7 @@ export function MainNav() {
           />
         </Link>
 
-        <nav className="flex items-center gap-2 overflow-x-auto rounded-full border border-[var(--brand)]/30 bg-[var(--accent-soft)]/65 p-1 shadow-[0_6px_22px_rgba(58,50,49,0.12)]">
+        <nav className="flex items-center gap-2 overflow-x-auto rounded-full border border-[var(--brand)]/20 bg-[var(--accent-soft)]/85 p-1 shadow-[0_8px_20px_rgba(43,67,102,0.18)]">
           {navItems.map((item) => {
             const isActive = pathname === item.href;
             return (
@@ -37,8 +39,8 @@ export function MainNav() {
                 href={item.href}
                 className={`rounded-full px-4 py-2 text-sm font-semibold transition-colors ${
                   isActive
-                    ? "bg-[var(--ink)] text-white shadow-[0_4px_14px_rgba(58,50,49,0.25)]"
-                    : "text-black/70 hover:bg-white/90 hover:text-[var(--brand)]"
+                    ? "bg-[var(--brand)] text-white shadow-[0_4px_12px_rgba(58,86,128,0.3)]"
+                    : "text-[var(--ink)]/78 hover:bg-white/80 hover:text-[var(--brand-strong)]"
                 }`}
               >
                 {item.label}

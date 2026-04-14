@@ -12,12 +12,12 @@ export function FaqBlock({ block }: FaqBlockProps) {
       <h2 className="mb-8 text-3xl font-semibold md:text-4xl">{block.title}</h2>
       <div className="space-y-4">
         {block.items.map((item) => (
-          <details key={item.question} className="group rounded-2xl border border-black/10 bg-white/85 p-5">
+          <details key={item.question} className="group rounded-2xl border border-[var(--brand)]/18 bg-[var(--surface)] p-5">
             <summary className="cursor-pointer list-none font-semibold">
               <span>{item.question}</span>
-              <span className="ml-2 text-black/40 transition-transform group-open:rotate-45">+</span>
+              <span className="ml-2 text-[var(--text-muted)] transition-transform group-open:rotate-45">+</span>
             </summary>
-            <p className="mt-3 text-black/70">{item.answer}</p>
+            <p className="mt-3 text-[var(--text-muted)]">{item.answer}</p>
           </details>
         ))}
       </div>

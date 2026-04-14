@@ -42,7 +42,7 @@ export const menuCategories: MenuCategory[] = [
       "Grilled Chicken Strawberry Walnut Salad",
       "House Salad",
       "Caesar Salad",
-      "Tuna Salad Salad",
+      "Tuna Salad",
       "Grilled Salmon Cous Cous Salad",
     ],
   },
@@ -130,7 +130,7 @@ export const menuCategories: MenuCategory[] = [
     items: [
       "Mediterranean Lamb Burger",
       "Cheese Burger",
-      "Wagyu Bacon Ceddar Burger",
+      "Wagyu Bacon Cheddar Burger",
       "Bacon Cheese Burger (10.69 listed on site)",
       "Turkey Burger",
       "Patty Melt",

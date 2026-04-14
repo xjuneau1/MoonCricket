@@ -23,7 +23,7 @@ export const siteConfig: SiteConfig = {
           eyebrow: "Downtown Winter Garden Favorite",
           title: "Welcome to The MoonCricket Grille",
           subtitle:
-            "14 W Plant Street, Winter Garden, FL | 407-905-5325. Temporary hours: Sun 11:30 - 4:00 PM, Mon Closed, Tue-Wed 11:30 AM - 8:00 PM, Thu-Sat 11:30 AM - 9:00 PM.",
+            "14 W Plant Street, Winter Garden, FL | 407-905-5325. Hours: Sun 11:30 - 4:00 PM, Mon Closed, Tue-Wed 11:30 AM - 8:00 PM, Thu-Sat 11:30 AM - 9:00 PM.",
           primaryAction: {
             label: "View Full Menu",
             href: "https://www.mooncricketgrille.com/mooncricket-grille-menu",
@@ -85,8 +85,8 @@ export const siteConfig: SiteConfig = {
           type: "splitContent",
           id: "history",
           badge: "Since 2003",
-          title: "A restored 1912 building with MoonCricket character",
-          body: "MoonCricket's home was built in 1912 and restored in the early 2000s, preserving original heart pine floors, pressed tin ceilings, and historic details throughout the space.",
+          title: "Built in 1912, reimagined as MoonCricket",
+          body: "Set inside a restored historic building, MoonCricket blends century-old architecture with a lively grille atmosphere, preserving heart pine floors, pressed tin ceilings, and the one-of-a-kind details that define the space.",
           bullets: [
             "Original skylight and transom windows remain from the early 1900s",
             "Vintage stained glass and a 25-foot prototype blimp propeller anchor the interior",
@@ -100,7 +100,7 @@ export const siteConfig: SiteConfig = {
         {
           type: "stats",
           id: "brews",
-          title: "MoonCricket at a glance",
+          title: "MoonCricket Highlights",
           items: [
             { label: "Building constructed", value: "1912" },
             { label: "Restoration completed", value: "2003" },
@@ -138,7 +138,7 @@ export const siteConfig: SiteConfig = {
                 "14 W Plant Street, Winter Garden, FL. Phone: 407-905-5325.",
             },
             {
-              question: "What are the current temporary hours?",
+              question: "What are MoonCricket's current hours?",
               answer:
                 "Sun 11:30 - 4:00 PM, Mon Closed, Tue 11:30 AM - 8:00 PM, Wed 11:30 AM - 8:00 PM, Thu-Sat 11:30 AM - 9:00 PM.",
             },
@@ -153,17 +153,6 @@ export const siteConfig: SiteConfig = {
                 "Yes. Events and employment information are published on the Events and Contact pages, including an employment application PDF.",
             },
           ],
-        },
-        {
-          type: "ctaBanner",
-          id: "contact",
-          title: "Plan your MoonCricket stop",
-          text: "Explore the full menu, beer pages, events, FAQs, and contact details directly from MoonCricket Grille.",
-          action: {
-            label: "Open Contact Page",
-            href: "https://www.mooncricketgrille.com/mooncricket-grille-contact",
-            variant: "primary",
-          },
         },
       ],
     },
