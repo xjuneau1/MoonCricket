@@ -7,13 +7,14 @@ type SiteButtonProps = {
 };
 
 const baseClassName =
-  "inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-semibold transition-transform duration-200 hover:-translate-y-0.5";
+  "inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-semibold transition-all duration-200 hover:-translate-y-0.5";
 
 const variantClassName: Record<NonNullable<ButtonLink["variant"]>, string> = {
-  primary: "bg-[var(--brand)] text-white hover:bg-[var(--brand-strong)]",
+  primary:
+    "bg-[var(--brand)] text-white shadow-[0_8px_22px_rgba(179,109,95,0.38)] hover:bg-[var(--brand-strong)] hover:shadow-[0_10px_24px_rgba(145,82,69,0.42)]",
   secondary:
-    "bg-transparent text-[var(--ink)] ring-1 ring-black/20 hover:bg-black/5",
-  ghost: "bg-white/70 text-[var(--ink)] hover:bg-white",
+    "bg-white/75 text-[var(--ink)] ring-1 ring-[var(--ink)]/22 hover:bg-white",
+  ghost: "bg-[var(--sand)]/22 text-[var(--ink)] ring-1 ring-[var(--sand)]/45 hover:bg-[var(--sand)]/35",
 };
 
 export function SiteButton({ action }: SiteButtonProps) {

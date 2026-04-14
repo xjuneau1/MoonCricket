@@ -1,20 +1,28 @@
 import type { Metadata } from "next";
-import { Fraunces, Manrope } from "next/font/google";
+import { Cormorant_Garamond, Nunito_Sans } from "next/font/google";
+
+import { MainNav } from "@/components/site/MainNav";
+import { SiteFooter } from "@/components/site/SiteFooter";
+
 import "./globals.css";
 
-const manrope = Manrope({
+const manrope = Nunito_Sans({
   variable: "--font-manrope",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
 });
 
-const fraunces = Fraunces({
+const fraunces = Cormorant_Garamond({
   variable: "--font-fraunces",
   subsets: ["latin"],
+  weight: ["500", "600", "700"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Static Site Template",
-  description: "Block-based static site starter built with Next.js",
+  title: "The MoonCricket Grille",
+  description: "MoonCricket Grille in Winter Garden, FL",
 };
 
 export default function RootLayout({
@@ -24,7 +32,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${manrope.variable} ${fraunces.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <MainNav />
+        <div className="flex-1">{children}</div>
+        <SiteFooter />
+      </body>
     </html>
   );
 }

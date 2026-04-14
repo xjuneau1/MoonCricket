@@ -1,140 +1,169 @@
 import { SiteConfig } from "@/types/site";
 
 export const siteConfig: SiteConfig = {
-  siteName: "Northstar Studio",
-  siteUrl: "https://example.com",
+  siteName: "The MoonCricket Grille",
+  siteUrl: "https://www.mooncricketgrille.com",
   navigation: [
-    { label: "Work", href: "#work" },
-    { label: "Services", href: "#services" },
-    { label: "About", href: "#about" },
-    { label: "Contact", href: "#contact" },
+    { label: "Menu", href: "#menu" },
+    { label: "History", href: "#history" },
+    { label: "Brews", href: "#brews" },
+    { label: "Events", href: "#events" },
+    { label: "Visit", href: "#visit" },
   ],
   pages: {
     home: {
       slug: "/",
-      seoTitle: "Northstar Studio | Static Site Template",
+      seoTitle: "The MoonCricket Grille | Winter Garden, FL",
       seoDescription:
-        "Composable, configurable static site template built with Next.js blocks.",
+        "MoonCricket Grille in Winter Garden, FL. Explore menu highlights, brews, events, and visit details.",
       blocks: [
         {
           type: "hero",
           id: "hero-main",
-          eyebrow: "Config-first Website Builder",
-          title: "Assemble polished pages from reusable blocks",
+          eyebrow: "Downtown Winter Garden Favorite",
+          title: "Welcome to The MoonCricket Grille",
           subtitle:
-            "Edit a single config file to shape your marketing site. Swap sections, rewrite copy, and change links without touching component internals.",
-          primaryAction: { label: "Start Building", href: "#services", variant: "primary" },
-          secondaryAction: { label: "View Blocks", href: "#work", variant: "secondary" },
+            "14 W Plant Street, Winter Garden, FL | 407-905-5325. Temporary hours: Sun 11:30 - 4:00 PM, Mon Closed, Tue-Wed 11:30 AM - 8:00 PM, Thu-Sat 11:30 AM - 9:00 PM.",
+          primaryAction: {
+            label: "View Full Menu",
+            href: "https://www.mooncricketgrille.com/mooncricket-grille-menu",
+            variant: "primary",
+          },
+          secondaryAction: {
+            label: "Get Directions",
+            href: "https://www.mooncricketgrille.com/mooncricket-grille-contact",
+            variant: "secondary",
+          },
         },
         {
           type: "featureGrid",
-          id: "services",
-          headline: "Reusable sections with strong defaults",
+          id: "menu",
+          headline: "From the MoonCricket menu",
           intro:
-            "Each block accepts typed props so content editing is fast and safe.",
+            "Highlights pulled from live MoonCricket menu pages including Starters, Burgers, Sandwiches, Seafood, and Brews.",
           columns: 3,
           items: [
             {
-              icon: "01",
-              title: "Hero Sections",
-              description: "Launch with variants for launch pages, agencies, and products.",
+              icon: "ST",
+              title: "Starters",
+              description:
+                "Basket of Homemade Kettle Chips, Spinach Artichoke Dip, Bam-Bam Shrimp, Fried Calamari, Stuffed Portobello, and Smoked Fish Dip.",
             },
             {
-              icon: "02",
-              title: "Feature Grids",
-              description: "Highlight benefits with consistent layout and spacing.",
+              icon: "BG",
+              title: "Burgers",
+              description:
+                "Half-pound fresh Black Angus burgers, including Wagyu Bacon Cheddar, Mediterranean Lamb Burger, Avocado Burger, Patty Melt, and Blue Cheese Burger.",
             },
             {
-              icon: "03",
-              title: "Content Splits",
-              description: "Pair copy with media and checklist bullets for storytelling.",
+              icon: "SW",
+              title: "Sandwiches",
+              description:
+                "Buffalo Chicken, Prime Rib French Dip, Reuben, The Cuban, Blackened Mahi Mahi Sandwich, Bam-Bam Shrimp Po Boy, and Portobello Hoagie.",
             },
             {
-              icon: "04",
-              title: "Stats Rows",
-              description: "Drop in social proof metrics and performance highlights.",
+              icon: "SF",
+              title: "Seafood Favorites",
+              description:
+                "Fish Tacos, Shrimp Platter, Teriyaki Glazed Salmon, Bam-Bam Shrimp Tacos, and Fish-N-Shrimp Combo.",
             },
             {
-              icon: "05",
-              title: "Testimonials",
-              description: "Keep customer quotes styled and readable out of the box.",
+              icon: "BR",
+              title: "Brews",
+              description:
+                "A deep bottle and draft list including styles from ciders and lagers to stouts, IPAs, and Belgian ales.",
             },
             {
-              icon: "06",
-              title: "FAQ and CTA",
-              description: "Close the page with objections handled and clear next steps.",
+              icon: "EV",
+              title: "Local Events",
+              description:
+                "Near Winter Garden Farmers Market (Saturdays 9 AM - 2 PM) and Friday's on the Plaza (7 PM - 9 PM).",
             },
           ],
         },
         {
           type: "splitContent",
-          id: "about",
-          badge: "How It Works",
-          title: "A single source of truth for structure and content",
-          body: "The page renderer reads blocks in order from your config. Reorder blocks to redesign the narrative. Add a new block object to extend the page with no layout rewiring.",
+          id: "history",
+          badge: "Since 2003",
+          title: "A restored 1912 building with MoonCricket character",
+          body: "MoonCricket's home was built in 1912 and restored in the early 2000s, preserving original heart pine floors, pressed tin ceilings, and historic details throughout the space.",
           bullets: [
-            "Typed block contracts prevent invalid content shapes",
-            "Fast iteration by editing one file",
-            "Scales cleanly as pages and sections grow",
+            "Original skylight and transom windows remain from the early 1900s",
+            "Vintage stained glass and a 25-foot prototype blimp propeller anchor the interior",
+            "Bowling-lane maple bar tops and local oak millwork create the signature look",
           ],
           image: {
-            src: "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1200&q=80",
-            alt: "Team reviewing page modules on a wall",
+            src: "/assets/mooncricket/interior-stained-glass.jpg",
+            alt: "Interior stained glass and vintage details at MoonCricket",
           },
         },
         {
           type: "stats",
-          id: "work",
-          title: "Built for launch speed",
+          id: "brews",
+          title: "MoonCricket at a glance",
           items: [
-            { label: "Reusable blocks", value: "7" },
-            { label: "Config file edits", value: "1" },
-            { label: "Average page setup", value: "< 30 min" },
-            { label: "Design consistency", value: "100%" },
+            { label: "Building constructed", value: "1912" },
+            { label: "Restoration completed", value: "2003" },
+            { label: "Best beer selection awards", value: "3x" },
+            { label: "Name-on-wall beer club", value: "99 Beers" },
           ],
         },
         {
           type: "testimonials",
-          id: "testimonials",
-          title: "Teams move faster with this pattern",
+          id: "events",
+          title: "What makes MoonCricket special",
           items: [
             {
               quote:
-                "We shipped a new landing page in a morning by rearranging blocks and replacing copy.",
-              name: "Priya Menon",
-              role: "Product Marketing Lead",
+                "Voted one of Orlando's Best Beer Selections multiple times, with a lineup built for both craft regulars and curious first-timers.",
+              name: "Orlando Magazine Mentions",
+              role: "Beer + Restaurant Recognition",
             },
             {
               quote:
-                "The typed config removes guesswork. Content edits are now low risk and reviewable in one diff.",
-              name: "Alex Rivera",
-              role: "Frontend Engineer",
+                "Set in the heart of downtown Winter Garden, close to local markets and Friday night events, with food, drinks, and a one-of-a-kind atmosphere.",
+              name: "Downtown Winter Garden",
+              role: "Community Destination",
             },
           ],
         },
         {
           type: "faq",
-          id: "faq",
-          title: "Common questions",
+          id: "visit",
+          title: "Visit information",
           items: [
             {
-              question: "Can this stay fully static?",
+              question: "Where is The MoonCricket Grille located?",
               answer:
-                "Yes. Keep content in config files and deploy with static output if needed.",
+                "14 W Plant Street, Winter Garden, FL. Phone: 407-905-5325.",
             },
             {
-              question: "How do I add a new section type?",
+              question: "What are the current temporary hours?",
               answer:
-                "Create a block component, add its type to the union, and register it in the renderer map.",
+                "Sun 11:30 - 4:00 PM, Mon Closed, Tue 11:30 AM - 8:00 PM, Wed 11:30 AM - 8:00 PM, Thu-Sat 11:30 AM - 9:00 PM.",
+            },
+            {
+              question: "Where can I see beer details and menu sections?",
+              answer:
+                "Browse the live menu and brews pages for full details, including Starters, Burgers, Sandwiches, Seafood, and Beer Knowledge.",
+            },
+            {
+              question: "Does MoonCricket post events and job opportunities?",
+              answer:
+                "Yes. Events and employment information are published on the Events and Contact pages, including an employment application PDF.",
             },
           ],
         },
         {
           type: "ctaBanner",
           id: "contact",
-          title: "Ready to shape your own template?",
-          text: "Duplicate this starter and swap in your brand, pages, and block data.",
-          action: { label: "Get Started", href: "#", variant: "primary" },
+          title: "Plan your MoonCricket stop",
+          text: "Explore the full menu, beer pages, events, FAQs, and contact details directly from MoonCricket Grille.",
+          action: {
+            label: "Open Contact Page",
+            href: "https://www.mooncricketgrille.com/mooncricket-grille-contact",
+            variant: "primary",
+          },
         },
       ],
     },
