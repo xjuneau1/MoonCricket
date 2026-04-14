@@ -1,9 +1,12 @@
-## Static Site Template (Next.js)
+## MoonCricket Grille Site (Next.js)
 
-This project is a config-driven static site starter built with Next.js App Router, TypeScript, and Tailwind CSS.
+This project is a rebuilt multi-page website for The MoonCricket Grille using Next.js App Router, TypeScript, and Tailwind CSS.
 
-The homepage is assembled block by block from one source of truth:
-- `src/config/site.ts`
+The site includes:
+- A persistent branded navbar/footer across pages
+- A custom home hero section and block-driven homepage content
+- Dedicated internal pages for Menu, Beer, FAQs, Events, and Contact
+- Imported MoonCricket assets and curated content from the live site
 
 ## Run Locally
 
@@ -12,42 +15,62 @@ npm install
 npm run dev
 ```
 
-Then open http://localhost:3000.
+Open http://localhost:3000.
 
-## Build and Lint
+## Lint and Build
 
 ```bash
 npm run lint
 npm run build
 ```
 
-## How the Architecture Works
+## Routes
 
-- `src/types/site.ts`
-Defines typed contracts for every block.
+- `/` Home
+- `/menu` Menu categories and item cards
+- `/beer` Beer list page
+- `/faqs` FAQ and history page
+- `/events` Local events page
+- `/contact` Contact and employment links
 
-- `src/config/site.ts`
-Contains all editable content and page composition order.
+## Content Sources
 
-- `src/components/site/BlockRenderer.tsx`
-Maps block types to React components.
+- Core homepage content: `src/config/site.ts`
+- Menu categories/items: `src/config/menu.ts`
+- Beer list: `src/config/beer.ts`
+- FAQ/history sections: `src/config/faqs.ts`
 
-- `src/components/site/blocks/*`
-Reusable, configurable block components.
+## Design and Shared UI
 
-- `src/app/page.tsx`
-Reads config and renders blocks in sequence.
+- Global styling and theme tokens: `src/app/globals.css`
+- Global layout shell (navbar + footer): `src/app/layout.tsx`
+- Navbar: `src/components/site/MainNav.tsx`
+- Footer: `src/components/site/SiteFooter.tsx`
 
-## Add or Reorder Sections
+## Home Page Architecture
 
-1. Open `src/config/site.ts`.
-2. In `pages.home.blocks`, reorder existing block objects or add a new one.
-3. If adding a new block type:
-	- Create a type in `src/types/site.ts`.
-	- Create a component in `src/components/site/blocks/`.
-	- Register the block in `src/components/site/BlockRenderer.tsx`.
+- Top hero image section with prominent logo: `src/app/page.tsx`
+- Config-driven block renderer: `src/components/site/BlockRenderer.tsx`
+- Reusable blocks: `src/components/site/blocks/*`
+
+## Menu Page Image Strategy
+
+The Menu page uses:
+- Real dessert images from MoonCricket's desserts page for dessert items
+- Query-matched placeholder food images for non-dessert items
+
+Relevant file:
+- `src/app/menu/page.tsx`
+
+Remote image hosts are configured in:
+- `next.config.ts`
+
+## Assets
+
+MoonCricket images and logo files live in:
+- `public/assets/mooncricket/`
 
 ## Notes
 
-- This starter currently includes: hero, feature grid, split content, stats, testimonials, FAQ, and CTA banner blocks.
-- The home route is statically prerendered.
+- The site is statically prerendered for all current routes.
+- If content changes on the live MoonCricket site, update corresponding files in `src/config/*`.
