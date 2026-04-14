@@ -27,20 +27,16 @@ export default function ContactPage() {
 
           <div className="mt-6 flex flex-wrap gap-3">
             <a
-              href="https://www.mooncricketgrille.com/mooncricket-grille-contact"
-              target="_blank"
-              rel="noreferrer"
+              href="tel:4079055325"
               className="inline-flex rounded-full bg-[var(--ink)] px-4 py-2 text-sm font-semibold text-white"
             >
-              Contact and Directions
+              Call 407-905-5325
             </a>
             <a
-              href="https://www.mooncricketgrille.com/_files/ugd/f836bc_15d17b32013942968e663cb354497fb4.pdf"
-              target="_blank"
-              rel="noreferrer"
+              href="/events"
               className="inline-flex rounded-full bg-[var(--brand)] px-4 py-2 text-sm font-semibold text-white"
             >
-              Employment Application PDF
+              Upcoming Events
             </a>
           </div>
         </section>

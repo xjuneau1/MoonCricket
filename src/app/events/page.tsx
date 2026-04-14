@@ -21,12 +21,10 @@ export default function EventsPage() {
             <p>Friday&apos;s on the Plaza (Downtown Winter Garden): 7:00 PM - 9:00 PM</p>
           </div>
           <a
-            href="https://www.mooncricketgrille.com/mooncricket-grille-events"
-            target="_blank"
-            rel="noreferrer"
+            href="/contact"
             className="mt-8 inline-flex rounded-full bg-[var(--ink)] px-4 py-2 text-sm font-semibold text-white"
           >
-            See Full Events Details
+            Plan Your Visit
           </a>
         </section>
       </div>

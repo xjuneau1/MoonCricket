@@ -41,12 +41,10 @@ export default function BeerPage() {
             ))}
           </div>
           <a
-            href="https://www.mooncricketgrille.com/mooncricket-grille-brews"
-            target="_blank"
-            rel="noreferrer"
+            href="/menu"
             className="mt-6 inline-flex rounded-full bg-[var(--brand)] px-4 py-2 text-sm font-semibold text-white"
           >
-            Explore Full Brews Page
+            View Menu
           </a>
         </section>
       </div>

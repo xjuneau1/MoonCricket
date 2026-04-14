@@ -2,7 +2,7 @@ import { SiteConfig } from "@/types/site";
 
 export const siteConfig: SiteConfig = {
   siteName: "The MoonCricket Grille",
-  siteUrl: "https://www.mooncricketgrille.com",
+  siteUrl: "/",
   navigation: [
     { label: "Menu", href: "#menu" },
     { label: "History", href: "#history" },
@@ -26,12 +26,12 @@ export const siteConfig: SiteConfig = {
             "14 W Plant Street, Winter Garden, FL | 407-905-5325. Hours: Sun 11:30 - 4:00 PM, Mon Closed, Tue-Wed 11:30 AM - 8:00 PM, Thu-Sat 11:30 AM - 9:00 PM.",
           primaryAction: {
             label: "View Full Menu",
-            href: "https://www.mooncricketgrille.com/mooncricket-grille-menu",
+            href: "/menu",
             variant: "primary",
           },
           secondaryAction: {
             label: "Get Directions",
-            href: "https://www.mooncricketgrille.com/mooncricket-grille-contact",
+            href: "/contact",
             variant: "secondary",
           },
         },

@@ -8,7 +8,7 @@ export type MenuCategory = {
 export const menuCategories: MenuCategory[] = [
   {
     title: "Starters",
-    sourceUrl: "https://www.mooncricketgrille.com/mooncricket-grille-starters",
+    sourceUrl: "/menu",
     items: [
       "Basket of Homemade Kettle Chips",
       "Spinach Artichoke Dip",
@@ -29,7 +29,7 @@ export const menuCategories: MenuCategory[] = [
   },
   {
     title: "Salads",
-    sourceUrl: "https://www.mooncricketgrille.com/mooncricket-grille-salads",
+    sourceUrl: "/menu",
     notes: [
       "House dressings listed on site: Balsamic Vinaigrette, Bleu Cheese, Caesar, Italian, Asian Ginger, Fat-Free Raspberry Vinaigrette, Ranch, and 1000 Island.",
     ],
@@ -48,7 +48,7 @@ export const menuCategories: MenuCategory[] = [
   },
   {
     title: "Wings",
-    sourceUrl: "https://www.mooncricketgrille.com/mooncricket-grille-wings",
+    sourceUrl: "/menu",
     notes: [
       "Wing sauces on site: Mild, Medium, Hot, Randall, Teriyaki, Garlic, and Bar-b-que.",
       "Order sizes listed on site: 9-piece, 12-piece, and 18-piece.",
@@ -59,7 +59,7 @@ export const menuCategories: MenuCategory[] = [
   },
   {
     title: "Sides",
-    sourceUrl: "https://www.mooncricketgrille.com/mooncricket-grille-sides",
+    sourceUrl: "/menu",
     notes: [
       "Premium sides listed on site: Sweet Potato Fries, Fried Green Tomatoes, Caesar Salad, Mixed Salad.",
     ],
@@ -72,7 +72,7 @@ export const menuCategories: MenuCategory[] = [
   },
   {
     title: "Wraps",
-    sourceUrl: "https://www.mooncricketgrille.com/mooncricket-grille-wraps",
+    sourceUrl: "/menu",
     items: [
       "Buffalo Chicken Wrap",
       "Tuna Salad Wrap",
@@ -82,7 +82,7 @@ export const menuCategories: MenuCategory[] = [
   },
   {
     title: "Kids Menu",
-    sourceUrl: "https://www.mooncricketgrille.com/mooncricket-grille-kids-menu",
+    sourceUrl: "/menu",
     notes: ["Site note: Kids ten and under, served with fries."],
     items: [
       "Quarter Pound Cheeseburger",
@@ -93,7 +93,7 @@ export const menuCategories: MenuCategory[] = [
   },
   {
     title: "Sandwiches",
-    sourceUrl: "https://www.mooncricketgrille.com/mooncricket-grille-sandwiches",
+    sourceUrl: "/menu",
     items: [
       "Buffalo Chicken Sandwich",
       "Grilled Chicken and Avocado Club",
@@ -113,7 +113,7 @@ export const menuCategories: MenuCategory[] = [
   },
   {
     title: "Seafood",
-    sourceUrl: "https://www.mooncricketgrille.com/mooncricket-grille-seafood",
+    sourceUrl: "/menu",
     items: [
       "Fish Tacos",
       "Fish Platter",
@@ -125,7 +125,7 @@ export const menuCategories: MenuCategory[] = [
   },
   {
     title: "Burgers",
-    sourceUrl: "https://www.mooncricketgrille.com/mooncricket-grille-burgers",
+    sourceUrl: "/menu",
     notes: ["Site note: All burgers listed as half-pound fresh Black Angus beef."],
     items: [
       "Mediterranean Lamb Burger",
@@ -141,7 +141,7 @@ export const menuCategories: MenuCategory[] = [
   },
   {
     title: "Desserts",
-    sourceUrl: "https://www.mooncricketgrille.com/mooncricket-grille-desserts",
+    sourceUrl: "/menu",
     items: [
       "Chocolate Overload Cake",
       "Peanut Butter Pie",

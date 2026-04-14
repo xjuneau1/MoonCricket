@@ -44,12 +44,10 @@ export default function FaqsPage() {
           ))}
 
           <a
-            href="https://www.mooncricketgrille.com/mooncricket-grille-faqs"
-            target="_blank"
-            rel="noreferrer"
+            href="/contact"
             className="inline-flex rounded-full bg-[var(--ink)] px-4 py-2 text-sm font-semibold text-white"
           >
-            Read Full MoonCricket Story
+            Contact MoonCricket
           </a>
         </section>
       </div>
